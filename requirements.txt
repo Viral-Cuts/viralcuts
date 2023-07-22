@@ -1,0 +1,4 @@
+langchain
+pytube
+youtube-transcript-api
+load_dotenv
