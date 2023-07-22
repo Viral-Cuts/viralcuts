@@ -5,57 +5,51 @@
     <style>
       #loadingThrobber {
         display: none;
-        /* Add your loading throbber styles here */
       }
     </style>
   </head>
   <body>
     <div id="loadingThrobber">Loading...</div>
-
     <form id="videoForm">
       <label for="video">Video URL:</label>
       <input type="text" id="video" name="video" required />
       <button type="submit">Submit</button>
     </form>
-
     <script>
       document
         .getElementById("videoForm")
         .addEventListener("submit", function (event) {
-          event.preventDefault(); // Prevent the default form submission behavior
-
-          // Get the video URL from the input field
+          event.preventDefault();
           const videoUrl = document.getElementById("video").value;
-
-          // Create the form data
           const formData = new FormData();
           formData.append("video", videoUrl);
-
-          // Show the loading throbber
           const loadingThrobber = document.getElementById("loadingThrobber");
           loadingThrobber.style.display = "block";
-
-          // Send the form data using the fetch API
           fetch("viralcuts.php", {
             method: "POST",
             body: formData,
           })
             .then((response) => response.json())
             .then((data) => {
-              // Hide the loading throbber
               loadingThrobber.style.display = "none";
+              let dataJSON = JSON.stringify(data);
+              let dataToSend = new FormData();
+              dataToSend.append("data", dataJSON);
 
-              // Handle the response data if needed
-              console.log(data);
-
-              // Redirect to app.php
-              window.location.href = "app.php";
+              // Create a new form and submit it to app.php
+              let form = document.createElement("form");
+              form.method = "POST";
+              form.action = "app.php";
+              let hiddenField = document.createElement("input");
+              hiddenField.type = "hidden";
+              hiddenField.name = "data";
+              hiddenField.value = dataJSON;
+              form.appendChild(hiddenField);
+              document.body.appendChild(form);
+              form.submit();
             })
             .catch((error) => {
-              // Hide the loading throbber
               loadingThrobber.style.display = "none";
-
-              // Handle any errors that occurred during the form submission
               console.error("Error:", error);
             });
         });

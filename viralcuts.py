@@ -19,13 +19,13 @@ def generate(
     video: str = Form(...),
 ):
     # llm = OpenAI(temperature=0, streaming=True, openai_api_key=os.getenv("OPENAI_API_KEY"))
-    # loader = YoutubeLoader.from_youtube_url(
-    #     "https://www.youtube.com/watch?v=QRy4JJNTAiA", add_video_info=True
-    # )
-    # document = loader.load()
+    loader = YoutubeLoader.from_youtube_url(
+        video, add_video_info=True
+    )
+    document = loader.load()
     # print(document)
 
-    data = {"video": video}
+    data = {"video": video, "document": document}
     return data
 
 

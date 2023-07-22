@@ -1,3 +1,5 @@
 <?php
 
-echo "app page";
+// echo "app page";
+
+print_r($_POST['data']);
