@@ -19,10 +19,6 @@ from langchain.schema import (
 
 load_dotenv()
 
-# llm = OpenAI(temperature=0, streaming=True,
-#              openai_api_key=os.getenv("OPENAI_API_KEY"))
-
-
 loader = YoutubeLoader.from_youtube_url(
     "https://www.youtube.com/watch?v=QRy4JJNTAiA", add_video_info=True
 )
@@ -36,11 +32,16 @@ document = loader.load()
 llm = OpenAI(temperature=0, streaming=True, openai_api_key=os.environ.get("OPENAI_API_KEY"))
 
 prompt = PromptTemplate(
-template = """You are the worlds short video expert.
+template = """You are an expert video script writer / editor. 
 
-Analyze the youtube video transcript: {transcript}
+The client has provided you with the raw transcript he needs broken down into 5 short clips.
+Here is the transcript: {transcript}
 
-Find a snippet from the video transcript with high viral potential as a short, then critique it for how viral the resulting short clip will be, then and rank them out of 10. If the score is not 10, repeat the process until a snippet worthy of a score of 10 is generated.?""",
+Read through the transcript and pull out 5 EXACT section unedited that fit the clients requirements:
+- between 100-150 words each
+- have high viral potential
+
+If there is not enough text in the transcript to get 5 then stop.""",
 
 input_variables = ["transcript"]
 )
