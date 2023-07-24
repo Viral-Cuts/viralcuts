@@ -30,8 +30,6 @@ The Critique Agent scores clips using advanced algorithms, ensuring that the con
     - [Target Audience](#target-audience)
     - [Pricing](#pricing)
 - [Future Developments](#future-developments)
-- [Installation](#installation)
-- [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
