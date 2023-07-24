@@ -1,6 +1,6 @@
 # Viralcuts
 
-![LabLab.ai Logo](https://example.com/path/to/logo.png) (Replace this link with the actual logo for your hackathon)
+![clkbvkz390054356ywqb55xxq_z53r3znr_imageLink](https://github.com/Viral-Cuts/viralcuts/assets/89584431/d123e5fe-17b2-40fc-b9a4-38869af88d77)
 
 Welcome to the LabLab.ai AI Agents Hackathon 2.0 GitHub repository! 🚀🤖 Here, we present our innovative solution to the challenges posed by YouTube's overwhelming statistics and time-consuming video editing processes. Our AI Agents aim to simplify video editing, cater to the short format trend, and facilitate seamless uploads to various social media platforms like YouTube Shorts, Instagram Reels, TikTok, Facebook, and Twitter.
 
@@ -19,10 +19,6 @@ This AI Agent utilizes the "YouTube Transcript" tool to automate the process of 
 ### Agent 2 - Critique
 
 The Critique Agent scores clips using advanced algorithms, ensuring that the content meets high-quality standards and maximizes audience engagement.
-
-## Demo
-
-![Demo Video](https://example.com/path/to/demo-video.gif) (Replace this link with a GIF or link to your actual demo video)
 
 ## Table of Contents
 
