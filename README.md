@@ -99,4 +99,3 @@ We value your feedback and support. Please feel free to reach out to us at easya
 Thank you for joining us on this journey! Together, let's shape the future of video content creation with AI-powered solutions.
 
 ---
-_Replace the URLs in the README with actual links to your logo, demo, and any other relevant content. Also, feel free to add more sections or details as needed to suit your project and hackathon requirements. The "Table of Contents" is optional but can be useful for easy navigation within the README._
