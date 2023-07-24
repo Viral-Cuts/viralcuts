@@ -2,7 +2,7 @@
 
 ![clkbvkz390054356ywqb55xxq_z53r3znr_imageLink](https://github.com/Viral-Cuts/viralcuts/assets/89584431/d123e5fe-17b2-40fc-b9a4-38869af88d77)
 
-Welcome to the LabLab.ai AI Agents Hackathon 2.0 GitHub repository! 🚀🤖 Here, we present our innovative solution to the challenges posed by YouTube's overwhelming statistics and time-consuming video editing processes. Our AI Agents aim to simplify video editing, cater to the short format trend, and facilitate seamless uploads to various social media platforms like YouTube Shorts, Instagram Reels, TikTok, Facebook, and Twitter.
+Welcome to the Viralcuts Repository! 🚀🤖 Here, we present our innovative solution to the challenges posed by YouTube's overwhelming statistics and time-consuming video editing processes. Our AI Agents aim to simplify video editing, cater to the short format trend, and facilitate seamless uploads to various social media platforms like YouTube Shorts, Instagram Reels, TikTok, Facebook, and Twitter.
 
 ## Problem Statement
 
@@ -12,7 +12,7 @@ The world of YouTube is booming, with approximately 3.7 million videos uploaded 
 
 We present two powerful AI Agents as part of our solution:
 
-### Agent 1 - Video Editor
+### Agent 1 - Video transcript
 
 This AI Agent utilizes the "YouTube Transcript" tool to automate the process of cutting clips and generating engaging video content.
 
@@ -71,14 +71,6 @@ While we celebrate our achievements, our journey doesn't end here. We have excit
 - Simplifying the export process for finished clips.
 - Continuous improvements and updates to our AI Agents.
 - Allowing MP4 videos to be uploaded for seamless editing.
-
-## Installation
-
-Provide detailed instructions here on how to install and set up the AI Agents on users' machines.
-
-## Usage
-
-Explain how users can utilize the AI Agents effectively and make the most out of the functionalities provided.
 
 ## Contributing
 
